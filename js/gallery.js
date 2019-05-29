@@ -1,12 +1,11 @@
-document.querySelectorAll('img').forEach(i=>i.addEventListener('click', event=>{
-	if(event.target.style.width === '10%'){
-		event.target.style.width = '70%';
-		event.target.style.position = 'absolute'
-	}else{
-		event.target.style.width = '10%';
-		event.target.style.position = '';
-	}
-	
-})
+document.querySelectorAll('.gallery-img-container').forEach(i=>i.addEventListener('click', event=>{
+	if(event.target.parentElement.parentElement.style.flexDirection === 'row'){
+		event.target.parentElement.parentElement.style.flexDirection = 'column';
+		
 
+	}else{
+		event.target.parentElement.parentElement.style.flexDirection = 'row';
+	}
+
+})
 )
