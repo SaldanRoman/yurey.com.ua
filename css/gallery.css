@@ -1,0 +1,27 @@
+.gallery{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.gallery h2{
+	font-size:1.5rem;
+}
+
+.gallery-img-container{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.gallery-img{
+	flex-basis: 15%;
+}
+
+.gallery-img img{
+	width: 98%;
+	cursor: pointer;
+}
